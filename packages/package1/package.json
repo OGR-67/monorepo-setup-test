@@ -1,6 +1,6 @@
 {
   "name": "@ogr-67-tests/package1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ogr-67-tests/package2": "^1.0.0"
+    "@ogr-67-tests/package2": "^1.0.1"
   }
 }
