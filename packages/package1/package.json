@@ -1,10 +1,10 @@
 {
   "name": "@ogr-67-tests/package1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified!\""
   },
   "author": "",
   "license": "ISC",
