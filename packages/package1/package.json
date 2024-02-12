@@ -1,0 +1,14 @@
+{
+  "name": "@ogr-67-tests/package1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ogr-67-tests/package2": "^1.0.0"
+  }
+}

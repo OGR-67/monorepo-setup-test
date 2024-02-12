@@ -1,0 +1,28 @@
+name: Lerna Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Important for commit history analysis
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+      - name: Install Dependencies
+        run: npm install
+      - name: Lerna Version and Publish
+        run: |
+          git config --global user.email "roosolivier@gmail.com"
+          git config --global user.name "Olivier Roos"
+          npx lerna version --yes --conventional-commits --create-release github --no-push
+          npx lerna publish from-git --yes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
